@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Ticketing</title>
+  <!-- tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            btn_primary: 'rgb(171, 239, 95)',
+            btn_secondary: 'rgba(171, 239, 95, 0.5)',
+
+          },
+          fontFamily: {
+            raleway: 'Raleway',
+            inter: 'Inter'
+
+          },
+          backgroundImage: {
+            banner: "url('./images/banner.png')",
+
+          },
+        },
+      },
+    }
+  </script>
 </head>
+
 <body>
+  <header class=" ">
+    <!-- navbar starts -->
+    <nav class=" md:w-10/12 w-11/12 mx-auto flex justify-between items-center py-4 ">
+      <h1 class="text-2xl font-bold text-black">P-Ticket</h1>
+      <ul class="lg:flex gap-14 font-medium text-gray-500 hidden">
+        <a class="btn bg-white shadow-none border-none hover:bg-slate-200" href="#">Home</a>
+        <a class="btn bg-white shadow-none border-none hover:bg-slate-200" href="#">About</a>
+        <a class="btn bg-white shadow-none border-none hover:bg-slate-200" href="#">Destination</a>
+        <a class="btn bg-white shadow-none border-none hover:bg-slate-200" href="#">Search</a>
+      </ul>
+      <button class="btn text-[#1DD100] px-6 rounded-xl border-[#1DD100] bg-green-50">
+        Bus
+        <span><img src="images/bus-icon.png" alt=""></span>
+      </button>
+    </nav>
+    <!-- navbar ends -->
+    <!-- banner section starts -->
+    <div class=" w-11/12 md:w-10/12 mx-auto  bg-banner bg-cover bg-no-repeat bg-center text-center rounded-3xl relative">
+      <div class="lg:w-3/5  mx-auto  font-semibold pt-16 leading-tight space-y-8 pb-36">
+        <h1 class="text-white text-6xl">End-to-End Travel with <span class="text-[#1DD100]">P Paribahan</span></h1>
+        <p class="text-gray-300 font-normal  ">Yes, you can run unit tests and view the results directly within the app.
+          The <br> integrated testing features allow for a streamlined .</p>
+
+        <button class="btn bg-[#1DD100] text-black border-none">Buy Ticket</button>
+      </div>
+      <!-- stat -->
+      <div class="absolute gap-6 lg:w-3/5 -bottom-64 md:-bottom-32 lg:-bottom-14 flex flex-wrap lg:flex-nowrap justify-center lg:left-52">
+        <div class="stats shadow  border-b-2 border-b-[#1DD100]">
+          <div class="stat text-left flex flex-col md:flex-row items-center">
+            <div class=""><img src="images/people.png" alt=""></div>
+            <div>
+              <div class="stat-value">500K+</div>
+              <div class="stat-desc">Resistered Users</div>
+  
+            </div>
+          </div>
+        </div>
+        <div class="stats shadow   border-b-2 border-b-[#1DD100]">
+          <div class="stat text-left flex flex-col md:flex-row items-center">
+            <div class=""><img src="images/ticket-cupon.png" alt=""></div>
+            <div>
+              <div class="stat-value">1.7 lacks</div>
+              <div class="stat-desc">Tickets sold</div>
+  
+            </div>
+          </div>
+        </div>
+        <div class="stats shadow   border-b-2 border-b-[#1DD100]">
+          <div class="stat text-left flex flex-col md:flex-row items-center">
+            <div class=""><img src="images/stoppage.png" alt=""></div>
+            <div>
+              <div class="stat-value">80K+</div>
+              <div class="stat-desc">Rentals Partners</div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
     
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
